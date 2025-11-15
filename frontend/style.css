@@ -110,7 +110,7 @@ button:hover {
 
 #history {
     margin-top: 30px;
-    max-height: 150px;       
+    max-height: 140px;       
     overflow-y: auto;        
     padding-right: 10px;     
 }
