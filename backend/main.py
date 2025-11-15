@@ -38,14 +38,12 @@ def read_file(file_content: bytes, filename: str) -> str | None:
     
     if filename.endswith(".txt"):
         try:
-            # Tenta decodificar como UTF-8, o padrão mais comum
+            # UTF-8
             return file_content.decode("utf-8")
         except UnicodeDecodeError:
-            # Em caso de erro, tenta decodificar como Latin-1
             return file_content.decode("latin-1")
             
     elif filename.endswith(".pdf"):
-        # Usa BytesIO para tratar o conteúdo em bytes como um arquivo
         pdf_file = BytesIO(file_content)
         try:
             pdf_reader = PyPDF2.PdfReader(pdf_file)
@@ -66,8 +64,7 @@ async def classify_email(
     text: str = Form(None)
 ):
     """
-    Classifica um email (enviado via arquivo ou texto direto) usando o modelo Gemini.
-    Retorna uma categoria (Produtivo/Improdutivo) e uma sugestão de resposta.
+    classifica o email e da uma sugestão de resposta
     """
     email_text = ""
     
