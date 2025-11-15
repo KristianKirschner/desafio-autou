@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Email Classifier AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Email Classifier AI</h1>
+
+        <form id="emailForm">
+            <label>Enviar arquivo (.txt ou .pdf):</label>
+            <input type="file" id="fileInput" name="file">
+            
+            <label>Ou digitar texto do email:</label>
+            <textarea id="textInput" name="text" placeholder="Cole o texto aqui..."></textarea>
+            
+            <button type="submit">Classificar Email</button>
+        </form>
+
+        <div id="result" class="result">
+            <h2>Resultado:</h2>
+            <p><strong>Categoria:</strong> <span id="categoria"></span></p>
+            <p><strong>Resposta Sugerida:</strong></p>
+            <p id="resposta"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
