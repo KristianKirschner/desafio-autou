@@ -16,7 +16,7 @@ form.addEventListener("submit", async (e) => {
         formData.append("text", textInput.value.trim());
     }
 
-    const API_URL = "https://refactored-garbanzo-5p9jjppxg6gh76j6-8000.app.github.dev/classify/"
+    const API_URL = "http://localhost:8000/classify/"
     
     try {
         const response = await fetch(API_URL, { 
