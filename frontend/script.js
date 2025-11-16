@@ -2,6 +2,22 @@ const form = document.getElementById("emailForm");
 const categoriaEl = document.getElementById("categoria");
 const respostaEl = document.getElementById("resposta");
 
+// Quando o usuário digita no textarea, limpa o arquivo
+document.getElementById("textInput").addEventListener("input", () => {
+    const fileInput = document.getElementById("fileInput");
+    if (fileInput.files.length > 0) {
+        fileInput.value = ""; // limpa arquivo
+    }
+});
+
+// Quando o usuário seleciona arquivo, limpa o texto
+document.getElementById("fileInput").addEventListener("change", () => {
+    const textInput = document.getElementById("textInput");
+    if (textInput.value.trim() !== "") {
+        textInput.value = ""; // limpa texto
+    }
+});
+
 form.addEventListener("submit", async (e) => {
     e.preventDefault();
 
