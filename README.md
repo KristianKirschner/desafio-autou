@@ -20,7 +20,10 @@ cd backend
 pip install -r requirements.txt
 
 ----
-Configurar variáveis de ambiente Edite o arquivo backend/.env e adicione sua chave da API:
+Configurar variáveis de ambiente 
+
+Edite o arquivo backend/.env e adicione sua chave da API:
+
 GOOGLE_API_KEY=sua_chave_aqui
 
 Obtenha sua chave em: https://aistudio.google.com/app/apikey
@@ -34,6 +37,7 @@ O backend estará disponível em: http://localhost:8000
 
 ----
 Configurar frontend
+
 Em outro terminal:
 
 cd frontend
