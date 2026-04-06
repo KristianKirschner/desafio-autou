@@ -5,6 +5,11 @@ Este projeto foi desenvolvido como parte de um desafio técnico de um processo s
 As instruções exatas do desafio podem ser encontradas no seguinte link:  
 https://autou-digital.notion.site/Contexto-do-Desafio-18836ce78e5580d0b59bcf9610b27769  
 
+## Apresentação do Projeto
+
+O desafio também solicitava uma apresentação em vídeo, você pode assistir aqui:  
+https://youtu.be/8cMCEVxbR8c
+
 ## Tecnologias Utilizadas
 
 -   **Python**
